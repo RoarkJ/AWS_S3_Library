@@ -4,3 +4,4 @@ This is a repository of Python scripts to manage and test Amazon Web Services S3
 The base scripts in file_transfer, s3_bucket_management, and s3_versioning will be used as base libraries for data analysis applications in which the application scripts will be used to target specific resources. Inevitably the base scripts will be evolved to meet the requirements of the projects.
 
 Beyond this the project will incorporate the use of AWS Athena and other tools to facilitate creation of full featured applications.
+The test scripts provided use Pytest.  I have not yet decided if I will use Pytest or Pythons builtin unittest.
