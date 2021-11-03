@@ -4,6 +4,8 @@ This is a repository of Python scripts to manage and test Amazon Web Services S3
 The base scripts in file_transfer, s3_bucket_management, and s3_versioning will be used as base libraries for data analysis applications in which the application scripts will be used to target specific resources. Inevitably the base scripts will be evolved to meet the requirements of the projects.
 
 Beyond this, the project will incorporate the use of AWS Athena and other tools to facilitate creation of full featured applications.
+It is recommended to use columnar format ie Apache Parquet with Athena as well as file compression.  So, we will get into all this at some point.  The benefit of this is that each column in the table is stored independently.  So, if we are only querying a subset of the columns in the table only the columns that are beign queried are accessed.  This speeds things up and saves on cost associated with using AWS.
+
 The test scripts provided use Pytest.  I have not yet decided if I will use Pytest or Pythons built-in unittest.
 
 Sometimes I use .py file extensions for notes because I might put some code in the notes.  I prefer for the code to stand out with color context.
